@@ -1,0 +1,6 @@
+{
+  "name": "DecentralMindz DAO",
+  "description": "DecentralMindz DAO - Connecting builders, contributors, and alpha minds for NFT whitelists, project marketing, airdrop grinding, and Web3 alpha.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
