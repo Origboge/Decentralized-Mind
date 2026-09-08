@@ -10,12 +10,16 @@ import { AirdropTracker } from './components/AirdropTracker';
 import { TeamSection } from './components/TeamSection';
 import { Footer } from './components/Footer';
 import { CollabModal } from './components/CollabModal';
+import { LoadingScreen } from './components/LoadingScreen';
 
 function AppContent() {
   const [collabModalOpen, setCollabModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col antialiased selection:bg-purple-500 selection:text-white relative overflow-x-hidden transition-colors duration-300">
+    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 flex flex-col antialiased selection:bg-purple-500 selection:text-white relative overflow-x-clip transition-colors duration-300">
+      {/* 0. Cyber Web3 Animated Loading Screen */}
+      <LoadingScreen />
+
       {/* Dynamic Ambient Background with soft orbs & cyber grid (works in light & dark mode) */}
       <AmbientBackground />
 
